@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		E8AED6602454511700F03D8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED65F2454511700F03D8C /* AppDelegate.swift */; };
 		E8AED6622454511700F03D8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6612454511700F03D8C /* SceneDelegate.swift */; };
-		E8AED6642454511700F03D8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6632454511700F03D8C /* ViewController.swift */; };
-		E8AED6672454511700F03D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AED6652454511700F03D8C /* Main.storyboard */; };
 		E8AED6692454511900F03D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AED6682454511900F03D8C /* Assets.xcassets */; };
-		E8AED66C2454511900F03D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AED66A2454511900F03D8C /* LaunchScreen.storyboard */; };
 		E8AED6772454511A00F03D8C /* ExpensesTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6762454511A00F03D8C /* ExpensesTrackerTests.swift */; };
 		E8AED6822454511A00F03D8C /* ExpensesTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6812454511A00F03D8C /* ExpensesTrackerUITests.swift */; };
+		E8AED69F24545C9300F03D8C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED69E24545C9300F03D8C /* Extensions.swift */; };
+		E8AED6A52454608300F03D8C /* DashBoardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6A42454608300F03D8C /* DashBoardTableViewController.swift */; };
+		E8AED6A72454609900F03D8C /* DashBoardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6A62454609900F03D8C /* DashBoardPresenter.swift */; };
+		E8AED6A9245460D200F03D8C /* DashBoardDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6A8245460D200F03D8C /* DashBoardDIContainer.swift */; };
+		E8AED6AB2454614300F03D8C /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6AA2454614300F03D8C /* AddTransactionViewController.swift */; };
+		E8AED6AD245477DA00F03D8C /* AddTransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6AC245477DA00F03D8C /* AddTransactionPresenter.swift */; };
+		E8AED6AF245477F600F03D8C /* AddTransactionDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6AE245477F600F03D8C /* AddTransactionDIContainer.swift */; };
+		E8AED6F224547B7B00F03D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AED6F124547B7B00F03D8C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +43,7 @@
 		E8AED65C2454511700F03D8C /* ExpensesTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpensesTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AED65F2454511700F03D8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8AED6612454511700F03D8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8AED6632454511700F03D8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E8AED6662454511700F03D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8AED6682454511900F03D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8AED66B2454511900F03D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8AED66D2454511900F03D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8AED6722454511A00F03D8C /* ExpensesTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AED6762454511A00F03D8C /* ExpensesTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTrackerTests.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 		E8AED67D2454511A00F03D8C /* ExpensesTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpensesTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AED6812454511A00F03D8C /* ExpensesTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTrackerUITests.swift; sourceTree = "<group>"; };
 		E8AED6832454511A00F03D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8AED69E24545C9300F03D8C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E8AED6A42454608300F03D8C /* DashBoardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardTableViewController.swift; sourceTree = "<group>"; };
+		E8AED6A62454609900F03D8C /* DashBoardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardPresenter.swift; sourceTree = "<group>"; };
+		E8AED6A8245460D200F03D8C /* DashBoardDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardDIContainer.swift; sourceTree = "<group>"; };
+		E8AED6AA2454614300F03D8C /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		E8AED6AC245477DA00F03D8C /* AddTransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionPresenter.swift; sourceTree = "<group>"; };
+		E8AED6AE245477F600F03D8C /* AddTransactionDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionDIContainer.swift; sourceTree = "<group>"; };
+		E8AED6F124547B7B00F03D8C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,10 @@
 		E8AED65E2454511700F03D8C /* ExpensesTracker */ = {
 			isa = PBXGroup;
 			children = (
-				E8AED65F2454511700F03D8C /* AppDelegate.swift */,
-				E8AED6612454511700F03D8C /* SceneDelegate.swift */,
-				E8AED6632454511700F03D8C /* ViewController.swift */,
-				E8AED6652454511700F03D8C /* Main.storyboard */,
-				E8AED6682454511900F03D8C /* Assets.xcassets */,
-				E8AED66A2454511900F03D8C /* LaunchScreen.storyboard */,
-				E8AED66D2454511900F03D8C /* Info.plist */,
+				E8AED68F245456B600F03D8C /* Application */,
+				E8AED692245456F400F03D8C /* PresentationLayer */,
+				E8AED690245456CC00F03D8C /* DomainLayer */,
+				E8AED691245456E900F03D8C /* RepositoryLayer */,
 			);
 			path = ExpensesTracker;
 			sourceTree = "<group>";
@@ -126,6 +133,150 @@
 				E8AED6832454511A00F03D8C /* Info.plist */,
 			);
 			path = ExpensesTrackerUITests;
+			sourceTree = "<group>";
+		};
+		E8AED68F245456B600F03D8C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6F324547BA000F03D8C /* AppConfiguration */,
+				E8AED65F2454511700F03D8C /* AppDelegate.swift */,
+				E8AED6612454511700F03D8C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E8AED690245456CC00F03D8C /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6B1245479CB00F03D8C /* Entities */,
+				E8AED695245457BA00F03D8C /* UseCases */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		E8AED691245456E900F03D8C /* RepositoryLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6B0245479A600F03D8C /* Jsons */,
+				E8AED696245457DD00F03D8C /* PersistentStorage */,
+			);
+			path = RepositoryLayer;
+			sourceTree = "<group>";
+		};
+		E8AED692245456F400F03D8C /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6942454575400F03D8C /* Helpers */,
+				E8AED6932454574D00F03D8C /* Scenes */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		E8AED6932454574D00F03D8C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED69824545ADC00F03D8C /* DashBoard */,
+				E8AED69924545AEC00F03D8C /* AddTransaction */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E8AED6942454575400F03D8C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED69D24545C8000F03D8C /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E8AED695245457BA00F03D8C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E8AED696245457DD00F03D8C /* PersistentStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistentStorage;
+			sourceTree = "<group>";
+		};
+		E8AED69824545ADC00F03D8C /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6A42454608300F03D8C /* DashBoardTableViewController.swift */,
+				E8AED6A62454609900F03D8C /* DashBoardPresenter.swift */,
+				E8AED6A8245460D200F03D8C /* DashBoardDIContainer.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		E8AED69924545AEC00F03D8C /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6AA2454614300F03D8C /* AddTransactionViewController.swift */,
+				E8AED6AC245477DA00F03D8C /* AddTransactionPresenter.swift */,
+				E8AED6AE245477F600F03D8C /* AddTransactionDIContainer.swift */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
+		E8AED69D24545C8000F03D8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED69E24545C9300F03D8C /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8AED6B0245479A600F03D8C /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		E8AED6B1245479CB00F03D8C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6B4245479F500F03D8C /* Incomes */,
+				E8AED6B3245479EB00F03D8C /* Expenses */,
+				E8AED6B2245479D500F03D8C /* Accounts */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E8AED6B2245479D500F03D8C /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		E8AED6B3245479EB00F03D8C /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+		E8AED6B4245479F500F03D8C /* Incomes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Incomes;
+			sourceTree = "<group>";
+		};
+		E8AED6F324547BA000F03D8C /* AppConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED6682454511900F03D8C /* Assets.xcassets */,
+				E8AED6F124547B7B00F03D8C /* LaunchScreen.storyboard */,
+				E8AED66D2454511900F03D8C /* Info.plist */,
+			);
+			path = AppConfiguration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +383,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8AED66C2454511900F03D8C /* LaunchScreen.storyboard in Resources */,
 				E8AED6692454511900F03D8C /* Assets.xcassets in Resources */,
-				E8AED6672454511700F03D8C /* Main.storyboard in Resources */,
+				E8AED6F224547B7B00F03D8C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8AED6642454511700F03D8C /* ViewController.swift in Sources */,
+				E8AED69F24545C9300F03D8C /* Extensions.swift in Sources */,
 				E8AED6602454511700F03D8C /* AppDelegate.swift in Sources */,
+				E8AED6A9245460D200F03D8C /* DashBoardDIContainer.swift in Sources */,
+				E8AED6A72454609900F03D8C /* DashBoardPresenter.swift in Sources */,
+				E8AED6AF245477F600F03D8C /* AddTransactionDIContainer.swift in Sources */,
 				E8AED6622454511700F03D8C /* SceneDelegate.swift in Sources */,
+				E8AED6A52454608300F03D8C /* DashBoardTableViewController.swift in Sources */,
+				E8AED6AB2454614300F03D8C /* AddTransactionViewController.swift in Sources */,
+				E8AED6AD245477DA00F03D8C /* AddTransactionPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,25 +451,6 @@
 			targetProxy = E8AED67E2454511A00F03D8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E8AED6652454511700F03D8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8AED6662454511700F03D8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8AED66A2454511900F03D8C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8AED66B2454511900F03D8C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8AED6842454511A00F03D8C /* Debug */ = {
@@ -436,7 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SGKG4PBBP;
-				INFOPLIST_FILE = ExpensesTracker/Info.plist;
+				INFOPLIST_FILE = ExpensesTracker/Application/AppConfiguration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SGKG4PBBP;
-				INFOPLIST_FILE = ExpensesTracker/Info.plist;
+				INFOPLIST_FILE = ExpensesTracker/Application/AppConfiguration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
