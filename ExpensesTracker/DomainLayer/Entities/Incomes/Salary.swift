@@ -9,11 +9,8 @@
 import Foundation
 
 struct Salary: Transactionable {
+    var id: String
     var ammount: String
-    
     var title: String
-    
     var date: String
-    
-    
 }

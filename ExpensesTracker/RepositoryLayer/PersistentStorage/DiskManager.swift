@@ -69,7 +69,7 @@ extension DiskManager: Diskable {
     
     fileprivate func fetchValue(for key: String) throws -> Data {
         let url = pathToFolder.appendingPathComponent(key)
-        guard let data = fileManager.contents(atPath: url.path) else { }
+        guard let data = fileManager.contents(atPath: url.path) else { throw CoreError(title: "No file found", message: "No file found in url path") }
         return data
     }
 }

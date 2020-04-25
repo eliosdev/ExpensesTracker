@@ -13,7 +13,7 @@ protocol Persistable {
     func save<T: Encodable>(_ value: T, for key: String) throws
 }
 
-class PersistCodable: Persistable {
+final class PersistCodable: Persistable {
     
     fileprivate let diskManager: Diskable
     fileprivate var decoder: JSONDecoder = .init()

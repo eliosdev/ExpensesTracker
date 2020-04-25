@@ -12,6 +12,12 @@ class DashBoardTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Dashboard"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddTransaction))
+    }
+    
+    @objc func showAddTransaction() {
+        
     }
 
     // MARK: - Table view data source

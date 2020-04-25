@@ -9,9 +9,8 @@
 import Foundation
 
 struct BankAccount: Accountable {
+    var id: String
     var title: String
-    
     var totalAmount: String
-    
     var transactions: [Transactionable]
 }

@@ -17,3 +17,9 @@ public extension NSObject {
         return String(describing: self)
     }
 }
+
+extension Float {
+    var stringValue: String {
+        return String(format: "%.5f", self)
+    }
+}

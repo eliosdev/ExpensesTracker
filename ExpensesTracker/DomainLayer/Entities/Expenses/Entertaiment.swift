@@ -9,11 +9,8 @@
 import Foundation
 
 struct Entertaiment: Transactionable {
+    var id: String
     var ammount: String
-    
     var title: String
-    
     var date: String
-    
-    
 }

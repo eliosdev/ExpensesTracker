@@ -9,6 +9,7 @@
 import Foundation
 
 protocol Transactionable {
+    var id: String { get }
     var ammount: String { get set }
     var title: String { get set }
     var date: String { get set }

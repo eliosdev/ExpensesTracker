@@ -9,11 +9,8 @@
 import Foundation
 
 struct Dividends: Transactionable {
+    var id: String
     var ammount: String
-    
     var title: String
-    
     var date: String
-    
-    
 }
