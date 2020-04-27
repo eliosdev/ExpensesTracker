@@ -12,7 +12,7 @@ typealias Handler<T> = (Result<T, Error>) -> Void
 
 protocol Diskable {
     func fetchValue(for key: String, handler: @escaping Handler<Data>)
-    func save(value: Data, for key: String, handler: @escaping Handler<Data>)
+    func save(value: Data, for key: String, handler: @escaping (Error?)->Void)
 }
 
 final class DiskManager {
@@ -35,13 +35,13 @@ extension DiskManager: Diskable {
         }
     }
     
-    func save(value: Data, for key: String, handler: @escaping Handler<Data>) {
+    func save(value: Data, for key: String, handler: @escaping (Error?)->Void) {
         queue.async {
             do {
                 try self.save(value: value, for: key)
-                handler(.success(value))
-            } catch {
-                handler(.failure(error))
+                handler(nil)
+            } catch let error {
+                handler(error)
             }
         }
     }
@@ -62,14 +62,14 @@ extension DiskManager: Diskable {
         do {
             try self.createFolders(in: url)
             try value.write(to: url, options: .atomic)
-        } catch {
-            
+        } catch let error {
+            //CoreError(title: "Error writing in disk", message: "No file found in url path", errorType: .writingDisk)
         }
     }
     
     fileprivate func fetchValue(for key: String) throws -> Data {
         let url = pathToFolder.appendingPathComponent(key)
-        guard let data = fileManager.contents(atPath: url.path) else { throw CoreError(title: "No file found", message: "No file found in url path") }
+        guard let data = fileManager.contents(atPath: url.path) else { throw CoreError(title: "No file found", message: "No file found in url path", errorType: .readingDisk) }
         return data
     }
 }

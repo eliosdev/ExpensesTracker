@@ -20,21 +20,15 @@
 		E8AED6AD245477DA00F03D8C /* AddTransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6AC245477DA00F03D8C /* AddTransactionPresenter.swift */; };
 		E8AED6AF245477F600F03D8C /* AddTransactionDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6AE245477F600F03D8C /* AddTransactionDIContainer.swift */; };
 		E8AED6F224547B7B00F03D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AED6F124547B7B00F03D8C /* LaunchScreen.storyboard */; };
-		E8AED6F7245480D900F03D8C /* EntitiesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6F6245480D900F03D8C /* EntitiesProtocols.swift */; };
-		E8AED6F92454834E00F03D8C /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6F82454834E00F03D8C /* Salary.swift */; };
-		E8AED6FB2454837800F03D8C /* Dividends.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6FA2454837800F03D8C /* Dividends.swift */; };
-		E8AED6FD245483A400F03D8C /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6FC245483A400F03D8C /* Tax.swift */; };
-		E8AED6FF245483E200F03D8C /* Grocery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED6FE245483E200F03D8C /* Grocery.swift */; };
-		E8AED7012454840600F03D8C /* Entertaiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7002454840600F03D8C /* Entertaiment.swift */; };
-		E8AED703245484B100F03D8C /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED702245484B100F03D8C /* Gym.swift */; };
-		E8AED705245484E700F03D8C /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED704245484E700F03D8C /* Health.swift */; };
-		E8AED7072454851A00F03D8C /* Cash.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7062454851A00F03D8C /* Cash.swift */; };
-		E8AED7092454856600F03D8C /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7082454856600F03D8C /* CreditCard.swift */; };
-		E8AED70B2454858D00F03D8C /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED70A2454858D00F03D8C /* BankAccount.swift */; };
 		E8AED70D245485F100F03D8C /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED70C245485F100F03D8C /* UseCases.swift */; };
 		E8AED70F24548A6C00F03D8C /* PersistCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED70E24548A6C00F03D8C /* PersistCodable.swift */; };
 		E8AED71124548A7E00F03D8C /* DiskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED71024548A7E00F03D8C /* DiskManager.swift */; };
 		E8AED7142454A1C900F03D8C /* ExpensesTrackerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7132454A1C900F03D8C /* ExpensesTrackerError.swift */; };
+		E8AED7172454DC6700F03D8C /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7162454DC6700F03D8C /* TransactionTableViewCell.swift */; };
+		E8AED7192454DC9900F03D8C /* AccountSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7182454DC9900F03D8C /* AccountSection.swift */; };
+		E8AED71C2455B1FB00F03D8C /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED71B2455B1FB00F03D8C /* PickerView.swift */; };
+		E8AED7202455EE9200F03D8C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED71F2455EE9200F03D8C /* Transaction.swift */; };
+		E8AED7242455EECC00F03D8C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7232455EECC00F03D8C /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,21 +68,15 @@
 		E8AED6AC245477DA00F03D8C /* AddTransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionPresenter.swift; sourceTree = "<group>"; };
 		E8AED6AE245477F600F03D8C /* AddTransactionDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionDIContainer.swift; sourceTree = "<group>"; };
 		E8AED6F124547B7B00F03D8C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E8AED6F6245480D900F03D8C /* EntitiesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitiesProtocols.swift; sourceTree = "<group>"; };
-		E8AED6F82454834E00F03D8C /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
-		E8AED6FA2454837800F03D8C /* Dividends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dividends.swift; sourceTree = "<group>"; };
-		E8AED6FC245483A400F03D8C /* Tax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax.swift; sourceTree = "<group>"; };
-		E8AED6FE245483E200F03D8C /* Grocery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery.swift; sourceTree = "<group>"; };
-		E8AED7002454840600F03D8C /* Entertaiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entertaiment.swift; sourceTree = "<group>"; };
-		E8AED702245484B100F03D8C /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
-		E8AED704245484E700F03D8C /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
-		E8AED7062454851A00F03D8C /* Cash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cash.swift; sourceTree = "<group>"; };
-		E8AED7082454856600F03D8C /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
-		E8AED70A2454858D00F03D8C /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		E8AED70C245485F100F03D8C /* UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
 		E8AED70E24548A6C00F03D8C /* PersistCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistCodable.swift; sourceTree = "<group>"; };
 		E8AED71024548A7E00F03D8C /* DiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskManager.swift; sourceTree = "<group>"; };
 		E8AED7132454A1C900F03D8C /* ExpensesTrackerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTrackerError.swift; sourceTree = "<group>"; };
+		E8AED7162454DC6700F03D8C /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		E8AED7182454DC9900F03D8C /* AccountSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSection.swift; sourceTree = "<group>"; };
+		E8AED71B2455B1FB00F03D8C /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		E8AED71F2455EE9200F03D8C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		E8AED7232455EECC00F03D8C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +227,7 @@
 		E8AED69824545ADC00F03D8C /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				E8AED7152454DC0B00F03D8C /* SectionsAndCells */,
 				E8AED6A42454608300F03D8C /* DashBoardTableViewController.swift */,
 				E8AED6A62454609900F03D8C /* DashBoardPresenter.swift */,
 				E8AED6A8245460D200F03D8C /* DashBoardDIContainer.swift */,
@@ -249,6 +238,7 @@
 		E8AED69924545AEC00F03D8C /* AddTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				E8AED71A2455B1E700F03D8C /* PickerView */,
 				E8AED6AA2454614300F03D8C /* AddTransactionViewController.swift */,
 				E8AED6AC245477DA00F03D8C /* AddTransactionPresenter.swift */,
 				E8AED6AE245477F600F03D8C /* AddTransactionDIContainer.swift */,
@@ -267,43 +257,10 @@
 		E8AED6B1245479CB00F03D8C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				E8AED6F6245480D900F03D8C /* EntitiesProtocols.swift */,
-				E8AED6B4245479F500F03D8C /* Incomes */,
-				E8AED6B3245479EB00F03D8C /* Expenses */,
-				E8AED6B2245479D500F03D8C /* Accounts */,
+				E8AED71E2455EE7F00F03D8C /* Account */,
+				E8AED71D2455EE7600F03D8C /* Transaction */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		E8AED6B2245479D500F03D8C /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				E8AED7062454851A00F03D8C /* Cash.swift */,
-				E8AED7082454856600F03D8C /* CreditCard.swift */,
-				E8AED70A2454858D00F03D8C /* BankAccount.swift */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-		E8AED6B3245479EB00F03D8C /* Expenses */ = {
-			isa = PBXGroup;
-			children = (
-				E8AED6FC245483A400F03D8C /* Tax.swift */,
-				E8AED6FE245483E200F03D8C /* Grocery.swift */,
-				E8AED7002454840600F03D8C /* Entertaiment.swift */,
-				E8AED702245484B100F03D8C /* Gym.swift */,
-				E8AED704245484E700F03D8C /* Health.swift */,
-			);
-			path = Expenses;
-			sourceTree = "<group>";
-		};
-		E8AED6B4245479F500F03D8C /* Incomes */ = {
-			isa = PBXGroup;
-			children = (
-				E8AED6F82454834E00F03D8C /* Salary.swift */,
-				E8AED6FA2454837800F03D8C /* Dividends.swift */,
-			);
-			path = Incomes;
 			sourceTree = "<group>";
 		};
 		E8AED6F324547BA000F03D8C /* AppConfiguration */ = {
@@ -322,6 +279,39 @@
 				E8AED7132454A1C900F03D8C /* ExpensesTrackerError.swift */,
 			);
 			path = AppError;
+			sourceTree = "<group>";
+		};
+		E8AED7152454DC0B00F03D8C /* SectionsAndCells */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED7162454DC6700F03D8C /* TransactionTableViewCell.swift */,
+				E8AED7182454DC9900F03D8C /* AccountSection.swift */,
+			);
+			path = SectionsAndCells;
+			sourceTree = "<group>";
+		};
+		E8AED71A2455B1E700F03D8C /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED71B2455B1FB00F03D8C /* PickerView.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		E8AED71D2455EE7600F03D8C /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED71F2455EE9200F03D8C /* Transaction.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		E8AED71E2455EE7F00F03D8C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED7232455EECC00F03D8C /* Account.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,29 +445,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8AED69F24545C9300F03D8C /* Extensions.swift in Sources */,
+				E8AED7192454DC9900F03D8C /* AccountSection.swift in Sources */,
 				E8AED6602454511700F03D8C /* AppDelegate.swift in Sources */,
-				E8AED7092454856600F03D8C /* CreditCard.swift in Sources */,
-				E8AED6FB2454837800F03D8C /* Dividends.swift in Sources */,
 				E8AED6A9245460D200F03D8C /* DashBoardDIContainer.swift in Sources */,
-				E8AED6F7245480D900F03D8C /* EntitiesProtocols.swift in Sources */,
 				E8AED6A72454609900F03D8C /* DashBoardPresenter.swift in Sources */,
 				E8AED6AF245477F600F03D8C /* AddTransactionDIContainer.swift in Sources */,
-				E8AED705245484E700F03D8C /* Health.swift in Sources */,
-				E8AED703245484B100F03D8C /* Gym.swift in Sources */,
+				E8AED7242455EECC00F03D8C /* Account.swift in Sources */,
 				E8AED6622454511700F03D8C /* SceneDelegate.swift in Sources */,
-				E8AED7072454851A00F03D8C /* Cash.swift in Sources */,
-				E8AED6F92454834E00F03D8C /* Salary.swift in Sources */,
+				E8AED7202455EE9200F03D8C /* Transaction.swift in Sources */,
 				E8AED6A52454608300F03D8C /* DashBoardTableViewController.swift in Sources */,
-				E8AED6FD245483A400F03D8C /* Tax.swift in Sources */,
 				E8AED70F24548A6C00F03D8C /* PersistCodable.swift in Sources */,
+				E8AED7172454DC6700F03D8C /* TransactionTableViewCell.swift in Sources */,
 				E8AED6AB2454614300F03D8C /* AddTransactionViewController.swift in Sources */,
 				E8AED70D245485F100F03D8C /* UseCases.swift in Sources */,
+				E8AED71C2455B1FB00F03D8C /* PickerView.swift in Sources */,
 				E8AED71124548A7E00F03D8C /* DiskManager.swift in Sources */,
-				E8AED7012454840600F03D8C /* Entertaiment.swift in Sources */,
-				E8AED70B2454858D00F03D8C /* BankAccount.swift in Sources */,
 				E8AED6AD245477DA00F03D8C /* AddTransactionPresenter.swift in Sources */,
 				E8AED7142454A1C900F03D8C /* ExpensesTrackerError.swift in Sources */,
-				E8AED6FF245483E200F03D8C /* Grocery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

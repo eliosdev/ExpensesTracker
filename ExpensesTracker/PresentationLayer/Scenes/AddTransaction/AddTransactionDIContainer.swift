@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+final class AddTransactionDIContainer {
+    
+    static func assembleAddTransactionSceneWith(viewController: AddTransactionViewController) {
+        let path = URL(fileURLWithPath: NSTemporaryDirectory())
+        let disk = DiskManager(path: path)
+        let persist = PersistCodable(disk: disk, decoder: .init(), enconder: .init())
+        let addTransaction = AddTransactionManager(persistance: persist)
+        let presenter = AddTransactionPresenter(persistanceManager: persist, useCase: addTransaction)
+        viewController.presenter = presenter
+    }
+}

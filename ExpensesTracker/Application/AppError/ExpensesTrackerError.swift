@@ -14,6 +14,14 @@ protocol ExpensesTrackerError: Error {
 }
 
 struct CoreError: ExpensesTrackerError {
+    enum TypeError: Error {
+        case encoding
+        case decoding
+        case readingDisk
+        case writingDisk
+    }
+    
     var title: String
     var message: String
+    var errorType: TypeError
 }

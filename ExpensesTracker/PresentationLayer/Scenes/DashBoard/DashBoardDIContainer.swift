@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+final class DashBoardDIContainer {
+    
+    static func assembleDashBoardSceneWith(viewController: DashBoardTableViewController) {
+        let path = URL(fileURLWithPath: NSTemporaryDirectory())
+        let disk = DiskManager(path: path)
+        let persist = PersistCodable(disk: disk, decoder: .init(), enconder: .init())
+        let removeTransaction = RemoveTransactionManager(persistance: persist)
+        let populateAccounts = PopulateAccounts(persist: persist)
+        let presenter = DashBoardPresenter(populateAccountsUseCase: populateAccounts, removeTransactionUseCase: removeTransaction)
+        viewController.presenter = presenter
+    }
+}

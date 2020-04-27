@@ -8,16 +8,24 @@
 
 import Foundation
 
+typealias Completion<T:Codable> = (Result<T, Error>) -> Void
+
+enum Accounts: String {
+    case cash
+    case credit
+    case bank
+}
+
 protocol Persistable {
-    func fetch<T: Decodable>(for key: String) throws -> T
-    func save<T: Encodable>(_ value: T, for key: String) throws
+    func fetch<T: Decodable>(for key: Accounts, completionHandler: @escaping (Error?, T?) -> Void)
+    func save<T: Encodable>(value: T, for key: Accounts, completionHandler: @escaping (Error?) -> Void)
 }
 
 final class PersistCodable: Persistable {
     
     fileprivate let diskManager: Diskable
-    fileprivate var decoder: JSONDecoder = .init()
-    fileprivate var enconder: JSONEncoder = .init()
+    fileprivate var decoder: JSONDecoder
+    fileprivate var enconder: JSONEncoder
     
     init(disk: Diskable, decoder: JSONDecoder, enconder: JSONEncoder) {
         self.diskManager = disk
@@ -25,32 +33,30 @@ final class PersistCodable: Persistable {
         self.enconder = enconder
     }
     
-    func fetch<T: Decodable>(for key: String) throws -> T {
-        var codableData: Data?
-        var diskError: Error?
-        diskManager.fetchValue(for: key) { (result) in
+    func fetch<T:Decodable>(for key: Accounts,completionHandler: @escaping (Error?, T?) -> Void) {
+        diskManager.fetchValue(for: key.rawValue) { (result) in
             switch result {
             case .failure(let error):
-                diskError = error
+                completionHandler(error, nil)
             case .success(let data):
-                codableData = data
+                do {
+                    let object:T =  try self.decoder.decode(T.self, from:data)
+                    completionHandler(nil, object)
+                } catch let error  {
+                    completionHandler(CoreError(title: "Error decoding", message: "Could not decode object with error: \(error.localizedDescription)", errorType: .decoding), nil)
+                }
             }
         }
-        guard let data = codableData else { throw CoreError(title: "Fetch Error", message: "Could not get data from disk with error \(diskError?.localizedDescription ?? "")") }
-        return try decoder.decode(T.self, from: data)
     }
     
-    func save<T:Encodable>(_ value: T, for key: String) throws {
-        let data = try enconder.encode(value)
-        var diskError: Error?
-        diskManager.save(value: data, for: key) { (result) in
-            switch result {
-            case .failure(let error):
-                diskError = error
-            case .success(_):
-                break
+    func save<T:Encodable>(value: T, for key: Accounts, completionHandler: @escaping (Error?) -> Void)  {
+        do {
+            let data = try enconder.encode(value)
+            diskManager.save(value: data, for: key.rawValue) { (error: Error?) in
+                completionHandler(error)
             }
+        } catch let error {
+            completionHandler(CoreError(title: "Error Encoding", message: "Could not encode object with error: \(error.localizedDescription)", errorType: .encoding))
         }
-        if diskError != nil { throw CoreError(title: "Saving Error", message: "Could not save data in disk with error \(diskError?.localizedDescription ?? "")") }
     }
 }
