@@ -11,8 +11,8 @@ import Foundation
 final class DashBoardDIContainer {
     
     static func assembleDashBoardSceneWith(viewController: DashBoardTableViewController) {
-        let path = URL(fileURLWithPath: NSTemporaryDirectory())
-        let disk = DiskManager(path: path)
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let disk = DiskManager(path: documentsURL)
         let persist = PersistCodable(disk: disk, decoder: .init(), enconder: .init())
         let removeTransaction = RemoveTransactionManager(persistance: persist)
         let populateAccounts = PopulateAccounts(persist: persist)

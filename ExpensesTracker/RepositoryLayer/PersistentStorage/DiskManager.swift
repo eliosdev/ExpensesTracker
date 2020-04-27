@@ -63,7 +63,7 @@ extension DiskManager: Diskable {
             try self.createFolders(in: url)
             try value.write(to: url, options: .atomic)
         } catch let error {
-            //CoreError(title: "Error writing in disk", message: "No file found in url path", errorType: .writingDisk)
+            throw CoreError(title: "Error writing in disk", message: "No file found in url path with error:\(error)", errorType: .writingDisk)
         }
     }
     

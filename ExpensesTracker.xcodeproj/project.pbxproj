@@ -29,6 +29,7 @@
 		E8AED71C2455B1FB00F03D8C /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED71B2455B1FB00F03D8C /* PickerView.swift */; };
 		E8AED7202455EE9200F03D8C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED71F2455EE9200F03D8C /* Transaction.swift */; };
 		E8AED7242455EECC00F03D8C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7232455EECC00F03D8C /* Account.swift */; };
+		E8AED7292457291700F03D8C /* UseCasesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AED7282457291700F03D8C /* UseCasesTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E8AED71B2455B1FB00F03D8C /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		E8AED71F2455EE9200F03D8C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		E8AED7232455EECC00F03D8C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E8AED7282457291700F03D8C /* UseCasesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		E8AED6752454511A00F03D8C /* ExpensesTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				E8AED727245728E600F03D8C /* UseCasesTests */,
 				E8AED6762454511A00F03D8C /* ExpensesTrackerTests.swift */,
 				E8AED6782454511A00F03D8C /* Info.plist */,
 			);
@@ -314,6 +317,14 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		E8AED727245728E600F03D8C /* UseCasesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8AED7282457291700F03D8C /* UseCasesTest.swift */,
+			);
+			path = UseCasesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8AED6772454511A00F03D8C /* ExpensesTrackerTests.swift in Sources */,
+				E8AED7292457291700F03D8C /* UseCasesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
